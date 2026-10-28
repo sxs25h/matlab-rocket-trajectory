@@ -88,14 +88,13 @@ fprintf('Time to apogee:    %8.2f s\n', t(end));
 fprintf('====================================\n');
 
 %% 6.Plot altitude
-
 figure;
-plot(t,v,'LineWidth',2);
-xlabel('Time(s)');
-ylabel('Altitude(m)');
-title('Rocket Altitude vs.Time');
+plot(t,h,'LineWidth',2);
+xlabel('Time (s)');
+ylabel('Altitude (m)');
+title('Rocket Altitude vs. Time');
 grid on;
-set(gca, 'FontSize',12);
+set(gca,'FontSize',12);
 
 %% 7.Plot velocity
 
@@ -110,10 +109,10 @@ set(gca, 'FontSize',12);
 %% 8.Plot mass
 
 figure;
-plot(t,v,'LineWidth',2);
-xlabel('Time(s)');
-ylabel('Mass(kg)');
+plot(t,m,'LineWidth',2);
+xlabel('Time (s)');
+ylabel('Mass (kg)');
 title('Rocket Mass vs. Time');
 grid on;
-set(gca, 'FontSize',12);
+set(gca,'FontSize',12);
 
